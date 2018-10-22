@@ -1,0 +1,14 @@
+All this will be better if you store everything in the directory where your prebuilt python libraries are stored.
+Download the Pre Trained Model of Multiple Object Detection and captioning:- Run the download_model python file to download 
+the pretrained model on the MSCOCO dataset.Make the following changes in the download_model file before running:
+Change the path in the variable name patmodel to your pc location(Create an etc folder in the python36 directory)
+After running that file the model will appear as show-and-tell-2M.zip and simultanously as .pb file.
+Next Step is to copy the show_and_tell_model.py in lib folder.(This will create a model class)
+Copy the word_counts.txt file to the etc folder.
+Copy the vocab.py file to your lib folder.
+Copy the caption_generator.py file to your lib folder.
+Copy the inference.py to the python36 library.
+Now selct an image for generating captions and copy it to the etc folder.
+Set the Flag variables to the respective paths in the inference file.
+Run the inference file directly.
+Top 3 Captions will be generated.
